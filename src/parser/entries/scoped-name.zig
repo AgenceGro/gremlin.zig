@@ -148,7 +148,7 @@ pub const ScopedName = struct {
 
             return ScopedName{
                 .allocator = self.allocator,
-                .name = name,
+                .name = name.?,
                 .parent = parent,
                 .full = full,
                 .full_owned = true,
